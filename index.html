@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工作性价比</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="panel">
+    <h1 class="full-center">工作性价比计算器</h1>
+    <hr>
+    <div class="full-center"><label for="monthSalary">月工资（元）</label><input type="number" id="monthSalary" value="8000" min="0"></div>
+    <div class="full-center"><label for="dayWorkingHours">每日工作时间（小时）</label><input type="number" id="dayWorkingHours" value="9" min="0" max="24"></div>
+    <div class="full-center"><label for="dayCommutingHours">每日通勤时间（小时）</label><input type="number" id="dayCommutingHours" value="1" min="0" max="24">
+    </div>
+    <div class="full-center"><label for="dayLazinessHours">每日摸鱼时间（小时）</label><input type="number" id="dayLazinessHours" value="5" min="0" max="24"></div>
+    <div class="full-center">
+      <label for="education">工作需求学历</label>
+      <select id="education">
+        <option value="0.8">专科及以下</option>
+        <option value="1" selected>普通本科</option>
+        <option value="1.2">985/211本科</option>
+        <option value="1.4">普通硕士</option>
+        <option value="1.6">985/211硕士</option>
+        <option value="1.8">普通博士</option>
+        <option value="2">985/211博士</option>
+      </select>
+    </div>
+    <div class="full-center">
+      <label for="workEnvironment">工作环境</label>
+      <select id="workEnvironment">
+        <option value="0.8">偏僻地区或郊区的工厂、工地，艰苦户外等工作</option>
+        <option value="0.9">工厂、工地、艰苦户外等工作</option>
+        <option value="1" selected>普通工作环境</option>
+        <option value="1.1">CBD、体制内工作环境</option>
+      </select>
+    </div>
+    <div class="full-center">
+      <label for="oppsiteSex">异性环境</label>
+      <select id="oppsiteSex">
+        <option value="0.9">周围没有好看异性</option>
+        <option value="1" selected>周围好看的异性不多不少</option>
+        <option value="1.1">周围有很多好看的异性</option>
+      </select>
+    </div>
+    <div class="full-center">
+      <label for="colleague">同事环境</label>
+      <select id="colleague">
+        <option value="0.95">周围拖后腿同事较多</option>
+        <option value="1" selected>周围基本都是普通同事</option>
+        <option value="1.05">周围优秀同事较多</option>
+      </select>
+    </div>
+    <div class="full-center"><label for="eightOClock">是否早上8点上班</label><input type="checkbox" id="eightOClock"></div>
+    <div class="full-center"><button id="submit">计算！</button></div>
+    <div class="full-center"><b>您的工作性价比为：<u id="result"></u></b></div>
+    <hr>
+    <div class="full-center">
+      <table>
+        <tr>
+          <th>性价比参考</th>
+        </tr>
+        <tr>
+          <td>低于<b><u>0.8</u></b>：很惨</td>
+        </tr>
+        <tr>
+          <td>高于<b><u>1.5</u></b>：很爽</td>
+        </tr>
+        <tr>
+          <td>高于<b><u>2</u></b>：爽爆炸</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>

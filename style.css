@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+.full-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#panel>div {
+  margin: 10px;
+}
+
+#panel>div>label {
+  margin-right: 4px;
+}
+
+#panel>div>input[type=number] {
+  width: 80px;
+  height: 30px;
+  padding: 4px;
+}
+
+#panel>div>input#monthSalary {
+  width: 144px;
+}
+
+#panel>div>input#eightOClock {
+  margin-left: 106px;
+}
+
+#panel>div>select {
+  width: 180px;
+  height: 30px;
+  padding: 4px;
+}
+
+#panel>div>select#education {
+  width: 148px;
+}
+
+#panel>div>button#submit {
+  width: 90px;
+  height: 30px;
+  font-weight: bold;
+}
